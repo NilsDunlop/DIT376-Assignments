@@ -14,12 +14,12 @@ class Trie:
            and inserts the word with the associated value"""
         current = self
         for part in path:
-            # If the current part is not a child of the current node create a new Trie node for this part.
+            # If the current part is not a child of the current node create a new Trie node for this part
             if part not in current.children:
                 current.children[part] = Trie()
-            # Move to the child node representing the current part.
+            # Move to the child node representing the current part
             current = current.children[part]
-        # Mark the last node as the end of a word and set its value.
+        # Mark the last node as the end of a word and set its value
         current.endOfWord = True
         current.value = val
 
@@ -28,13 +28,12 @@ class Trie:
            retrieves the value of the word if it exists in the Trie."""
         current = self
         for part in path:
-            # If the part is not found in the current node’s children,
-            # the word does not exist in the Trie.
+            # If the part is not found in the current node’s children the word does not exist in the Trie
             if part not in current.children:
                 return None
-            # Move to the next node in the path.
+            # Move to the next node in the path
             current = current.children[part]
-        # Return the value of the last node if it marks the end of a word.
+        # Return the value of the last node if it marks the end of a word
         return current.value if current.endOfWord else None
 
     def delete(self, path: List[str]) -> Optional[str]:
@@ -44,17 +43,17 @@ class Trie:
         stack = [(self, '')]
         current = self
         for part in path:
-            # If the part is not found in the current node’s children the word does not exist in the Trie.
+            # If the part is not found in the current node’s children the word does not exist in the Trie
             if part not in current.children:
                 return None
             current = current.children[part]
-            # Add each traversed node and its part to the stack.
+            # Add each traversed node and its part to the stack
             stack.append((current, part))
         if not current.endOfWord:
-            # The given path does not correspond to a word in the Trie.
+            # The given path does not correspond to a word in the Trie
             return None
         deleted_value = current.value
-        # Mark the last node as inactive and remove its value.
+        # Mark the last node as inactive and remove its value
         current.endOfWord = False
         current.value = None
 
