@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Assignment 2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Assignment 4 - ND</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14579,11 +14579,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Assignment-2">Assignment 2<a class="anchor-link" href="#Assignment-2">&#182;</a></h1><h2 id="Group-Members:">Group Members:<a class="anchor-link" href="#Group-Members:">&#182;</a></h2><ul>
-<li>### Nils Dunlop, e-mail: gusdunlni@student.gu.se</li>
-<li>### Francisco Alejandro Erazo Piza, e-mail: guserafr@student.gu.se</li>
-</ul>
-
+<h1 id="Assignment-4">Assignment 4<a class="anchor-link" href="#Assignment-4">&#182;</a></h1><h2 id="By:-Nils-Dunlop,-e-mail:-gusdunlni@student.gu.se">By: <strong>Nils Dunlop, e-mail: gusdunlni@student.gu.se</strong><a class="anchor-link" href="#By:-Nils-Dunlop,-e-mail:-gusdunlni@student.gu.se">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14598,207 +14594,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Task-1">Task 1<a class="anchor-link" href="#Task-1">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Creating-a-list-of-words-using-the-file-%22words.txt%22">Creating a list of words using the file "words.txt"<a class="anchor-link" href="#Creating-a-list-of-words-using-the-file-%22words.txt%22">&#182;</a></h4>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-
-<span class="c1"># Initialize empty list</span>
-<span class="n">words_from_txt</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="c1"># Dynamic path to the words.txt file</span>
-<span class="n">file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s2">"words.txt"</span><span class="p">)</span>
-
-<span class="c1"># Open the file and read its contents line by line</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file</span><span class="p">:</span>
-        <span class="c1"># Remove leading and trailing whitespace, and append the word to the list</span>
-        <span class="n">word</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-        <span class="n">words_from_txt</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
-        
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We will use <code>words_small_list</code> to test the functions. While <code>words_from_txt</code> will be used for testing the performance.</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">words_small_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"cherry"</span><span class="p">,</span> <span class="s2">"date"</span><span class="p">,</span> <span class="s2">"elderberry"</span><span class="p">,</span> <span class="s2">"fig"</span><span class="p">,</span> <span class="s2">"grape"</span><span class="p">,</span> <span class="s2">"honeydew"</span><span class="p">,</span> <span class="s2">"kiwi"</span><span class="p">,</span> <span class="s2">"lemon"</span><span class="p">,</span> <span class="s2">"mango"</span><span class="p">,</span> <span class="s2">"nectarine"</span><span class="p">,</span> <span class="s2">"orange"</span><span class="p">,</span> <span class="s2">"peach"</span><span class="p">,</span> <span class="s2">"pear"</span><span class="p">,</span> <span class="s2">"quince"</span><span class="p">,</span> <span class="s2">"raspberry"</span><span class="p">,</span> <span class="s2">"strawberry"</span><span class="p">,</span> <span class="s2">"tangerine"</span><span class="p">,</span> <span class="s2">"watermelon"</span><span class="p">,</span> <span class="s2">"apricot"</span><span class="p">,</span> <span class="s2">"blueberry"</span><span class="p">,</span> <span class="s2">"cranberry"</span><span class="p">,</span> <span class="s2">"dragonfruit"</span><span class="p">,</span> <span class="s2">"guava"</span><span class="p">,</span> <span class="s2">"lime"</span><span class="p">,</span> <span class="s2">"papaya"</span><span class="p">,</span> <span class="s2">"passionfruit"</span><span class="p">,</span> <span class="s2">"pineapple"</span><span class="p">,</span> <span class="s2">"pomegranate"</span><span class="p">,</span> <span class="s2">"blackberry"</span><span class="p">,</span> <span class="s2">"boysenberry"</span><span class="p">,</span> <span class="s2">"currant"</span><span class="p">,</span> <span class="s2">"gooseberry"</span><span class="p">,</span> <span class="s2">"grapefruit"</span><span class="p">,</span> <span class="s2">"kumquat"</span><span class="p">,</span> <span class="s2">"lychee"</span><span class="p">,</span> <span class="s2">"mulberry"</span><span class="p">,</span> <span class="s2">"persimmon"</span><span class="p">,</span> <span class="s2">"plum"</span><span class="p">,</span> <span class="s2">"rhubarb"</span><span class="p">,</span> <span class="s2">"blackcurrant"</span><span class="p">,</span> <span class="s2">"cantaloupe"</span><span class="p">,</span> <span class="s2">"clementine"</span><span class="p">,</span> <span class="s2">"coconut"</span><span class="p">,</span> <span class="s2">"date"</span><span class="p">,</span> <span class="s2">"elderberry"</span><span class="p">,</span> <span class="s2">"fig"</span><span class="p">,</span> <span class="s2">"grape"</span><span class="p">,</span> <span class="s2">"honeydew"</span><span class="p">,</span> <span class="s2">"kiwi"</span><span class="p">,</span> <span class="s2">"lemon"</span><span class="p">,</span> <span class="s2">"mango"</span><span class="p">,</span> <span class="s2">"nectarine"</span><span class="p">,</span> <span class="s2">"orange"</span><span class="p">,</span> <span class="s2">"peach"</span><span class="p">,</span> <span class="s2">"pear"</span><span class="p">,</span> <span class="s2">"quince"</span><span class="p">,</span> <span class="s2">"raspberry"</span><span class="p">,</span> <span class="s2">"strawberry"</span><span class="p">,</span> <span class="s2">"tangerine"</span><span class="p">,</span> <span class="s2">"watermelon"</span><span class="p">,</span> <span class="s2">"apricot"</span><span class="p">,</span> <span class="s2">"blueberry"</span><span class="p">,</span> <span class="s2">"cranberry"</span><span class="p">,</span> <span class="s2">"dragonfruit"</span><span class="p">,</span> <span class="s2">"guava"</span><span class="p">,</span> <span class="s2">"lime"</span><span class="p">,</span> <span class="s2">"papaya"</span><span class="p">,</span> <span class="s2">"passionfruit"</span><span class="p">,</span> <span class="s2">"pineapple"</span><span class="p">,</span> <span class="s2">"pomegranate"</span><span class="p">,</span> <span class="s2">"blackberry"</span><span class="p">,</span> <span class="s2">"boysenberry"</span><span class="p">,</span> <span class="s2">"currant"</span><span class="p">,</span> <span class="s2">"gooseberry"</span><span class="p">,</span> <span class="s2">"grapefruit"</span><span class="p">,</span> <span class="s2">"kumquat"</span><span class="p">,</span> <span class="s2">"lychee"</span><span class="p">,</span> <span class="s2">"mulberry"</span><span class="p">,</span> <span class="s2">"persimmon"</span><span class="p">,</span> <span class="s2">"plum"</span><span class="p">,</span> <span class="s2">"rhubarb"</span><span class="p">,</span> <span class="s2">"blackcurrant"</span><span class="p">,</span> <span class="s2">"cantaloupe"</span><span class="p">,</span> <span class="s2">"clementine"</span><span class="p">,</span> <span class="s2">"coconut"</span><span class="p">,</span> <span class="s2">"date"</span><span class="p">,</span> <span class="s2">"elderberry"</span><span class="p">,</span> <span class="s2">"fig"</span><span class="p">,</span> <span class="s2">"grape"</span><span class="p">,</span> <span class="s2">"honeydew"</span><span class="p">,</span> <span class="s2">"kiwi"</span><span class="p">,</span> <span class="s2">"lemon"</span><span class="p">,</span> <span class="s2">"mango"</span><span class="p">,</span> <span class="s2">"nectarine"</span><span class="p">,</span> <span class="s2">"orange"</span><span class="p">,</span> <span class="s2">"peach"</span><span class="p">,</span> <span class="s2">"pear"</span><span class="p">,</span> <span class="s2">"quince"</span><span class="p">,</span> <span class="s2">"raspberry"</span><span class="p">,</span> <span class="s2">"strawberry"</span><span class="p">,</span> <span class="s2">"tangerine"</span><span class="p">,</span> <span class="s2">"watermelon"</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Write-a-simple-solution-to-find-all-the-words-with-a-given-letter-in-a-given-position">Write a simple solution to find all the words with a given letter in a given position<a class="anchor-link" href="#Write-a-simple-solution-to-find-all-the-words-with-a-given-letter-in-a-given-position">&#182;</a></h4>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Simple function to find words in a list of words that have a specific letter at a specific position</span>
-<span class="k">def</span> <span class="nf">find_words_simple</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">position</span><span class="p">,</span> <span class="n">letter</span><span class="p">):</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">position</span> <span class="ow">and</span> <span class="n">word</span><span class="p">[</span><span class="n">position</span><span class="p">]</span> <span class="o">==</span> <span class="n">letter</span><span class="p">:</span>
-            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">result</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Testing-the-simple-function">Testing the simple function<a class="anchor-link" href="#Testing-the-simple-function">&#182;</a></h4>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Call the function to find words with a specific letter at a specific position</span>
-<span class="n">words_at_position_simple</span> <span class="o">=</span> <span class="n">find_words_simple</span><span class="p">(</span><span class="n">words_small_list</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">)</span>
-
-<span class="c1"># Print the result</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"results = "</span><span class="p">,</span> <span class="n">words_at_position_simple</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>results =  [&#39;grape&#39;, &#39;orange&#39;, &#39;peach&#39;, &#39;pear&#39;, &#39;cranberry&#39;, &#39;dragonfruit&#39;, &#39;guava&#39;, &#39;blackberry&#39;, &#39;grapefruit&#39;, &#39;blackcurrant&#39;, &#39;grape&#39;, &#39;orange&#39;, &#39;peach&#39;, &#39;pear&#39;, &#39;cranberry&#39;, &#39;dragonfruit&#39;, &#39;guava&#39;, &#39;blackberry&#39;, &#39;grapefruit&#39;, &#39;blackcurrant&#39;, &#39;grape&#39;, &#39;orange&#39;, &#39;peach&#39;, &#39;pear&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Task-2">Task 2<a class="anchor-link" href="#Task-2">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Write-a-more-efficient-solution-by-using-a-different-data-structure.">Write a more efficient solution by using a different data structure.<a class="anchor-link" href="#Write-a-more-efficient-solution-by-using-a-different-data-structure.">&#182;</a></h4>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We can use a dictionary for a more efficient solution. The keys are letters (at the needed position), and the values are lists of words with that letter at the given position. Using this data structure, we can speed up retrieving all words that match the criteria without iterating through the entire list each time.</p>
-
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -14807,23 +14602,40 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Function to build a word index from a list of words and a position in the word</span>
-<span class="k">def</span> <span class="nf">build_word_index</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">position</span><span class="p">):</span>
-    <span class="n">word_index</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># Initialize empty dictionary</span>
-    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span> <span class="c1"># Loop through the words in the list of words </span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">position</span><span class="p">:</span> <span class="c1"># Check if the word is long enough to have the position we're looking for </span>
-            <span class="n">letter</span> <span class="o">=</span> <span class="n">word</span><span class="p">[</span><span class="n">position</span><span class="p">]</span> <span class="c1"># Get the letter at the specified position</span>
-            <span class="k">if</span> <span class="n">letter</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">word_index</span><span class="p">:</span> <span class="c1"># Check if the letter is already in the word index</span>
-                <span class="n">word_index</span><span class="p">[</span><span class="n">letter</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># If not, add it as a key and initialize an empty list as its value</span>
-            <span class="n">word_index</span><span class="p">[</span><span class="n">letter</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="c1"># Append the word to the list associated with the letter</span>
-    <span class="k">return</span> <span class="n">word_index</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">encode</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+    <span class="c1"># Return None if the input string is empty</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">input_string</span><span class="p">:</span>
+        <span class="k">return</span>
+    <span class="n">current_char</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="n">input_string</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">input_string</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+        <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="n">current_char</span><span class="p">:</span>
+            <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Yield the encoded substring</span>
+            <span class="k">yield</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">current_char</span><span class="si">}{</span><span class="n">count</span><span class="si">}</span><span class="s2">"</span>
+            <span class="c1"># Reset for the next character and count</span>
+            <span class="n">current_char</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="n">char</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="c1"># Yield the encoded substring for the last character group</span>
+    <span class="k">yield</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">current_char</span><span class="si">}{</span><span class="n">count</span><span class="si">}</span><span class="s2">"</span>
 
-<span class="c1"># Function to find words in a word index that have a specific letter at a specific position</span>
-<span class="k">def</span> <span class="nf">find_words_efficient</span><span class="p">(</span><span class="n">word_index</span><span class="p">,</span> <span class="n">letter</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">word_index</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">word_index</span><span class="p">[</span><span class="n">letter</span><span class="p">]</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="p">[]</span>
+<span class="k">def</span> <span class="nf">decode</span><span class="p">(</span><span class="n">encoded_string</span><span class="p">):</span>
+    <span class="n">character</span><span class="p">,</span> <span class="n">number</span> <span class="o">=</span> <span class="s1">''</span><span class="p">,</span> <span class="s1">''</span>
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">encoded_string</span><span class="p">:</span>
+        <span class="c1"># If the character is a digit, append it to the number string</span>
+        <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+            <span class="n">number</span> <span class="o">+=</span> <span class="n">char</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># If character and number strings are not empty, yield each character</span>
+            <span class="k">if</span> <span class="n">character</span> <span class="ow">and</span> <span class="n">number</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">)):</span>
+                    <span class="k">yield</span> <span class="n">character</span>
+            <span class="c1"># Reset the character and number variables for next iteration</span>
+            <span class="n">character</span><span class="p">,</span> <span class="n">number</span> <span class="o">=</span> <span class="n">char</span><span class="p">,</span> <span class="s1">''</span>
+
+    <span class="c1"># Yield characters for the last character group</span>
+    <span class="k">if</span> <span class="n">character</span> <span class="ow">and</span> <span class="n">number</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">)):</span>
+            <span class="k">yield</span> <span class="n">character</span>
 </pre></div>
 
      </div>
@@ -14831,33 +14643,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Example use:</p>
-<ol>
-<li>Create a dictionary using the <code>build_word_index(words, position)</code> function. <code>word_index = build_word_index(words, 1)</code></li>
-<li>Use <code>find_words(word_index, letter)</code> to find all words with the given letter at the given position. <code>find_words(word_index, 'a')</code></li>
-</ol>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Testing-the-more-efficient-function">Testing the more efficient function<a class="anchor-link" href="#Testing-the-more-efficient-function">&#182;</a></h4>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -14866,14 +14651,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Call the function to build a word index from a list of words and a position in the word</span>
-<span class="n">word_index</span> <span class="o">=</span> <span class="n">build_word_index</span><span class="p">(</span><span class="n">words_small_list</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Example of usage 1:</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s2">"It's __sooooo__ wowww!!!"</span>
+<span class="n">encoded</span> <span class="o">=</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">encode</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">encoded</span><span class="p">)</span>
 
-<span class="c1"># Call the function to find words with a specific letter at a specific position</span>
-<span class="n">words_at_position_efficient</span> <span class="o">=</span> <span class="n">find_words_efficient</span><span class="p">(</span><span class="n">word_index</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">)</span>
-
-<span class="c1"># Print the result</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"results = "</span><span class="p">,</span> <span class="n">words_at_position_efficient</span><span class="p">)</span>
+<span class="n">decoded</span> <span class="o">=</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">decode</span><span class="p">(</span><span class="n">encoded</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">decoded</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14895,7 +14679,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>results =  [&#39;grape&#39;, &#39;orange&#39;, &#39;peach&#39;, &#39;pear&#39;, &#39;cranberry&#39;, &#39;dragonfruit&#39;, &#39;guava&#39;, &#39;blackberry&#39;, &#39;grapefruit&#39;, &#39;blackcurrant&#39;, &#39;grape&#39;, &#39;orange&#39;, &#39;peach&#39;, &#39;pear&#39;, &#39;cranberry&#39;, &#39;dragonfruit&#39;, &#39;guava&#39;, &#39;blackberry&#39;, &#39;grapefruit&#39;, &#39;blackcurrant&#39;, &#39;grape&#39;, &#39;orange&#39;, &#39;peach&#39;, &#39;pear&#39;]
+<pre>I1t1&#39;1s1 1_2s1o5_2 1w1o1w3!3
+It&#39;s __sooooo__ wowww!!!
 </pre>
 </div>
 </div>
@@ -14904,28 +14689,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Task-3">Task 3<a class="anchor-link" href="#Task-3">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Using-timeit-to-compare-the-two-functions-and-see-which-one-is-faster">Using <code>timeit</code> to compare the two functions and see which one is faster<a class="anchor-link" href="#Using-timeit-to-compare-the-two-functions-and-see-which-one-is-faster">&#182;</a></h4>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -14934,19 +14697,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">timeit</span>
-
-<span class="c1"># Measure the time for the simple solution</span>
-<span class="n">time_simple</span> <span class="o">=</span> <span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">find_words_simple</span><span class="p">(</span><span class="n">words_from_txt</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">),</span> <span class="n">number</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span> <span class="c1"># Call the function 100 times</span>
-
-<span class="c1"># Measure the time for the efficient solution (remember to setup the dictionary first)</span>
-<span class="n">word_index_from_text</span> <span class="o">=</span> <span class="n">build_word_index</span><span class="p">(</span><span class="n">words_from_txt</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-
-<span class="n">time_efficient</span> <span class="o">=</span> <span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">find_words_efficient</span><span class="p">(</span><span class="n">word_index</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">),</span> <span class="n">number</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span> <span class="c1"># Call the function 10000 times</span>
-
-<span class="c1"># Print the results</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Simple Solution Time: </span><span class="si">{</span><span class="n">time_simple</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Efficient Solution Time: </span><span class="si">{</span><span class="n">time_efficient</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Example of usage 2</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s2">"‘‘‘‘‘´´´´´´*******^^^^^"</span>
+<span class="n">encoded</span> <span class="o">=</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">encode</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">encoded</span><span class="p">)</span>
+<span class="n">decoded</span> <span class="o">=</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">decode</span><span class="p">(</span><span class="n">encoded</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">decoded</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14968,8 +14724,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Simple Solution Time: 7.515795 seconds
-Efficient Solution Time: 0.000022 seconds
+<pre>‘5´6*7^5
+‘‘‘‘‘´´´´´´*******^^^^^
 </pre>
 </div>
 </div>
@@ -14985,7 +14741,7 @@ Efficient Solution Time: 0.000022 seconds
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Problem-2">Problem 2<a class="anchor-link" href="#Problem-2">&#182;</a></h2><p>We create three methods <code>read_words_from_file()</code>, <code>find_anagrams()</code>, <code>export_to_json()</code>. <code>read_words_from_file()</code> handles the extraction of words from the <code>words.txt</code> file. <code>find_anagrams()</code> is determines the anagrams of the words and adds them into a dictionary of lists. <code>export_to_json()</code> takes the final dictionary and creates a corresponding json file.</p>
+<h2 id="Problem-2:">Problem 2:<a class="anchor-link" href="#Problem-2:">&#182;</a></h2><p>Analysing Algorithms (seen below) Complexity</p>
 
 </div>
 </div>
@@ -14998,133 +14754,67 @@ Efficient Solution Time: 0.000022 seconds
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">merge</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">left</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">right</span>
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">right</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">left</span>
 
-<span class="c1"># Extract all the words from the words.txt file and add them to a list</span>
-<span class="k">def</span> <span class="nf">read_words_from_file</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-        <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">words</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="c1"># Method to find all the anagrams given a word list</span>
-<span class="k">def</span> <span class="nf">find_anagrams</span><span class="p">(</span><span class="n">word_list</span><span class="p">):</span>
-    <span class="n">anagram_groups</span> <span class="o">=</span> <span class="p">{}</span>
-    
-    <span class="sd">"""</span>
-<span class="sd">    For each of the words a word singature is created. To illustrate this we can take the</span>
-<span class="sd">    words ABBA and BABA if we create a signature both will be sorted in alphabetical order</span>
-<span class="sd">    AABB, AABB that way we can easily check if words are anagrams of eachother.</span>
-<span class="sd">    """</span>
-    
-    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">word_list</span><span class="p">:</span>
-        <span class="n">signature</span> <span class="o">=</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">word</span><span class="p">))</span>
-        <span class="k">if</span> <span class="n">signature</span> <span class="ow">in</span> <span class="n">anagram_groups</span><span class="p">:</span> <span class="c1"># If anagram already exists just append anagram into list</span>
-            <span class="n">anagram_groups</span><span class="p">[</span><span class="n">signature</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span> 
-            <span class="n">anagram_groups</span><span class="p">[</span><span class="n">signature</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="c1"># Otherwise create a new list with word anagrams</span>
-
-    <span class="c1"># Construct final dictionary</span>
-    <span class="n">final_dictionary</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="k">for</span> <span class="n">word_group</span> <span class="ow">in</span> <span class="n">anagram_groups</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
-        <span class="c1"># Check if word group is an anagram</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">word_group</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">key</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">word_group</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-            <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">final_dictionary</span><span class="p">:</span>
-                <span class="n">final_dictionary</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
-
-            <span class="n">final_dictionary</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word_group</span><span class="p">)</span>  <span class="c1"># Append the whole anagram group as a list</span>
-            
-    <span class="c1"># Sort each anagram group list by the anagram list length</span>
-    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">groups</span> <span class="ow">in</span> <span class="n">final_dictionary</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-        <span class="n">final_dictionary</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">groups</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">final_dictionary</span>
-
-<span class="c1"># Method to extract the dictionary as a .json file using the json.dump() method</span>
-<span class="k">def</span> <span class="nf">export_to_json</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">file</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Creates-a-main-function-that-calls-all-other-methods-and-takes-user-input-for-the-final-output-json-file">Creates a main function that calls all other methods and takes user input for the final output json file<a class="anchor-link" href="#Creates-a-main-function-that-calls-all-other-methods-and-takes-user-input-for-the-final-output-json-file">&#182;</a></h4>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-    <span class="n">word_list</span> <span class="o">=</span> <span class="n">read_words_from_file</span><span class="p">(</span><span class="s2">"words.txt"</span><span class="p">)</span>
-    <span class="n">anagram_dictionary</span> <span class="o">=</span> <span class="n">find_anagrams</span><span class="p">(</span><span class="n">word_list</span><span class="p">)</span>
-
-    <span class="c1"># Prompt the user for word length and filename</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="n">selected_length</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the desired word length: "</span><span class="p">))</span>
-        <span class="n">filename</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the filename for the JSON output: "</span><span class="p">)</span>
-        
-        <span class="c1"># Ensure filename ends with .json</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">filename</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'.json'</span><span class="p">):</span>
-            <span class="n">filename</span> <span class="o">+=</span> <span class="s1">'.json'</span>
-
-        <span class="c1"># Filter the dictionary for the selected word length</span>
-        <span class="k">if</span> <span class="n">selected_length</span> <span class="ow">in</span> <span class="n">anagram_dictionary</span><span class="p">:</span>
-            <span class="n">data_to_export</span> <span class="o">=</span> <span class="p">{</span><span class="n">selected_length</span><span class="p">:</span> <span class="n">anagram_dictionary</span><span class="p">[</span><span class="n">selected_length</span><span class="p">]}</span>
-            <span class="n">export_to_json</span><span class="p">(</span><span class="n">data_to_export</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Anagrams of length </span><span class="si">{</span><span class="n">selected_length</span><span class="si">}</span><span class="s2"> have been saved to </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">left</span><span class="p">)</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">right</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">left</span><span class="p">):</span>
+                <span class="n">result</span> <span class="o">+=</span> <span class="n">right</span><span class="p">[</span><span class="n">j</span><span class="p">:]</span>
+                <span class="k">break</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No anagrams of length </span><span class="si">{</span><span class="n">selected_length</span><span class="si">}</span><span class="s2"> found."</span><span class="p">)</span>
-    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter a valid number for the word length."</span><span class="p">)</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">right</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">j</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">right</span><span class="p">):</span>
+                <span class="n">result</span> <span class="o">+=</span> <span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">:]</span>
+                <span class="k">break</span>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
-    <span class="n">main</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="k">def</span> <span class="nf">sort1</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">end</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">end</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">end</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">key</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="k">while</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="n">start</span> <span class="ow">and</span> <span class="n">L</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">key</span><span class="p">:</span>
+            <span class="n">L</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">j</span> <span class="o">-=</span> <span class="mi">1</span>
+        <span class="n">L</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">key</span>
+    <span class="k">return</span> <span class="n">L</span>
+
+<span class="k">def</span> <span class="nf">sort2</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+    <span class="n">slice_size</span> <span class="o">=</span> <span class="mi">32</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">slice_size</span><span class="p">):</span>
+        <span class="n">sort1</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="nb">min</span><span class="p">((</span><span class="n">i</span> <span class="o">+</span> <span class="n">slice_size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">size</span> <span class="o">=</span> <span class="n">slice_size</span>
+    <span class="k">while</span> <span class="n">size</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">start</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">size</span> <span class="o">*</span> <span class="mi">2</span><span class="p">):</span>
+            <span class="n">middle_point</span> <span class="o">=</span> <span class="n">start</span> <span class="o">+</span> <span class="n">size</span> <span class="o">-</span> <span class="mi">1</span>
+            <span class="n">end</span> <span class="o">=</span> <span class="nb">min</span><span class="p">((</span><span class="n">start</span> <span class="o">+</span> <span class="n">size</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+            <span class="n">merged_list</span> <span class="o">=</span> <span class="n">merge</span><span class="p">(</span>
+                <span class="n">left</span><span class="o">=</span><span class="n">L</span><span class="p">[</span><span class="n">start</span><span class="p">:</span> <span class="n">middle_point</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span>
+                <span class="n">right</span><span class="o">=</span><span class="n">L</span><span class="p">[</span><span class="n">middle_point</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:</span> <span class="n">end</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
+            <span class="n">L</span><span class="p">[</span><span class="n">start</span><span class="p">:</span> <span class="n">start</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">merged_list</span><span class="p">)]</span> <span class="o">=</span> <span class="n">merged_list</span>
+        <span class="n">size</span> <span class="o">*=</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="n">L</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Enter the desired word length: 6
-Enter the filename for the JSON output: output
-Anagrams of length 6 have been saved to output.json.
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -15134,9 +14824,166 @@ Anagrams of length 6 have been saved to output.json.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Which-data-structure-did-you-use-and-why?">Which data structure did you use and why?<a class="anchor-link" href="#Which-data-structure-did-you-use-and-why?">&#182;</a></h3><p>I utilized dictionaries and lists to address problem 2.</p>
-<p>Dictionaries were chosen primarily because the requirement was to categorize anagrams based on their word length. By using the word length as the dictionary key, we can achieve constant time complexity O(1) for access operations, making it efficient to retrieve anagrams for a particular word length.</p>
-<p>Lists, on the other hand, were used to hold the anagrams corresponding to each word length. This decision was driven by the fact that lists are ordered collections and allow for simple iteration, even though the order of the words within each anagram group wasn't a primary concern. Lists also offer the flexibility to store multiple items (in this case, words) of the same value, which is a feature we need for storing groups of anagrams.</p>
+<h3 id="A:-What-is-the-connection-between-the-two-algorithms?">A: What is the connection between the two algorithms?<a class="anchor-link" href="#A:-What-is-the-connection-between-the-two-algorithms?">&#182;</a></h3><p><strong>Algorithm descriptions:</strong></p>
+<ul>
+<li><code>merge()</code> is a simple implementation of the merging operation used in Merge Sort.</li>
+<li><code>sort1()</code> is a simple implementation of the sorting algorithm known as Insertion Sort.</li>
+<li><code>sort2()</code> is a simple implementation of Timsort the sorting algorithm built in python with the <code>list.sort()</code> and <code>sorted()</code> functions where it is known for its practical and optimized use of Insertion Sort and Merge Sort.</li>
+</ul>
+<p>The connection between <code>sort1()</code> (Insertion Sort), <code>merge()</code> (merge operation) and <code>sort2()</code> (Timsort) lies in Timsort's utilization of Insertion Sort for its initial sorting phase. In this phase, Timsort sorts small sublists, or 'runs,' using Insertion Sort, exploiting its efficiency on small or partially sorted data. After the runs are sorted, Timsort employs the merging operation within Merge sort, a stable, efficient, comparison-based, divide and conquer sorting algorithm, to merge lists. The combination of Insertion Sort and Merge Sort in Timsort allows it to effectively handle diverse data sets, optimizing for different types of data arrangements and sizes, which addresses some of the inefficiencies of using only Insertion Sort on large, unsorted data sets.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="B:-What-is-the-complexity-of-sort1-in-the-best-case,-in-the-worst-case,-and-on-average?-Give-details-on-your-analysis-to-get-to-the-answer.">B: What is the complexity of <code>sort1</code> in the best case, in the worst case, and on average? Give details on your analysis to get to the answer.<a class="anchor-link" href="#B:-What-is-the-complexity-of-sort1-in-the-best-case,-in-the-worst-case,-and-on-average?-Give-details-on-your-analysis-to-get-to-the-answer.">&#182;</a></h3><p><code>sort1()</code> which implements Insertion Sort, can have varying time complexities depending on the nature of the input. Here is a breakdown:</p>
+<ol>
+<li><p><strong>Best Case Complexity</strong>: O(n)</p>
+<ul>
+<li><p>The best case occurs when the input list is already sorted. In this case, each element is compared only once with the preceding elements. Since there are nn elements, the best case time complexity is O(n).</p>
+</li>
+<li><p><strong>Best Case Scenario:</strong></p>
+<ul>
+<li>In each iteration of the main loop, the inner while loop will not execute, as the list is already sorted, resulting in a linear time complexity.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Worst Case Complexity</strong>: O(n²)</p>
+<ul>
+<li><p>The worst case occurs when the input list is in reverse order. Every element must be compared with every other element, leading to a time complexity of O(n²).</p>
+</li>
+<li><p><strong>Worst Case Scenario:</strong></p>
+<ul>
+<li>In the worst case, for every element i, i comparisons and i swaps will be made, resulting in 1 + 2 + 3 + ... + (n-1) = n(n-1)/2 = O(n²) time complexity.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Average Case Complexity</strong> O(n²)</p>
+<ul>
+<li><p>On average, the time complexity of Insertion Sort is also O(n²) since, in the average case, each element is likely to be compared with half of the other elements.</p>
+</li>
+<li><p><strong>Average Case Scenario:</strong></p>
+<ul>
+<li>The average number of comparisons for each element is roughly n/2, leading to a total of n²/2 comparisons and swaps. Resulting in an average time complexity of O(n²).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="Conclusion"><strong>Conclusion</strong><a class="anchor-link" href="#Conclusion">&#182;</a></h4><p><code>sort1()</code>, implementing Insertion Sort, is optimal for smaller or partially sorted datasets but faces efficiency issues, having quadratic time complexity, with larger inputs.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="C:--What-is-the-complexity-of-sort2-in-the-best-case,-in-the-worst-case,-and-on-average?-Give-details-on-your-analysis-to-get-to-the-answer.">C:  What is the complexity of <code>sort2</code> in the best case, in the worst case, and on average? Give details on your analysis to get to the answer.<a class="anchor-link" href="#C:--What-is-the-complexity-of-sort2-in-the-best-case,-in-the-worst-case,-and-on-average?-Give-details-on-your-analysis-to-get-to-the-answer.">&#182;</a></h3><p>To fully understand the time complexity of the hybrid algorithm Timsort, we must understand the subprocesses, insertion sort and Merge Sorts merge operation, procedure and time complexities. Given the analysis above, insertion sort has the following time complexities: best case O(n), worst case O(n²) and average case O(n²). Now we will analyze the merge operation procedure and time complexity:</p>
+<p><strong><code>merge()</code> Procedure</strong>:</p>
+<ol>
+<li>The algorithm begins by considering two base cases:<ul>
+<li><strong>a.</strong> If the left list is empty, return the right list immediately since there's nothing left to merge from the left side.</li>
+<li><strong>b.</strong> If the right list is empty, return the left list immediately. </li>
+</ul>
+</li>
+<li>We initialize two iterators, <code>i</code> for the left list and <code>j</code> for the right list.</li>
+<li>Iteratively, until both <code>i</code> and <code>j</code> reach the end of their respective lists:<ul>
+<li><strong>a.</strong> If <code>left[i]</code> is ≤ <code>right[j]</code>, add <code>left[i]</code> to the result list and increment <code>i</code>.</li>
+<li><strong>b.</strong> Else, add <code>right[j]</code> to the result list and increment <code>j</code>.</li>
+</ul>
+</li>
+<li>After the loop, if elements remain in either the <code>left</code> or <code>right</code> list, they are appended to the <code>result</code> list. Finally, the merged <code>result</code> list is returned.</li>
+</ol>
+<p>The merge procedure has a best, average and worst-case time complexity of O(n) since every element from both lists will always have to be looked at once.<br>
+&nbsp;</p>
+<p>Following the merge procedure, we will now look at the of the procedure of the <code>sort2()</code> (Timsort) algorithm.</p>
+<p><strong><code>sort2()</code> Procedure</strong>:</p>
+<ol>
+<li>The algorithm starts with a predefined slice size of 32. This is because insertion sort is especially efficient on smaller arrays.</li>
+<li>Iterate over the list in intervals of the slice size:<ul>
+<li>a. For each slice, apply <code>sort1()</code> (insertion sort) from the starting index of the slice to the minimum of the end of the slice or the end of the list.</li>
+<li>b. This ensures that every slice of size 32 is sorted individually.</li>
+</ul>
+</li>
+<li>Initialize <code>size</code> as the slice size. This variable will be used to control the size of the slices being merged and will double with each iteration. The goal is to merge these small slices into progressively larger sorted sections until the whole list is sorted.</li>
+<li>Repeat until the size is less than the length of the list:<ul>
+<li>a. For every <code>start</code> index from 0 to the length of the list in steps of <code>size * 2</code>:<ul>
+<li>i. Determine the middle and end points for the merge operation.</li>
+<li>ii. Merge the two slices using the <code>merge()</code> function.</li>
+<li>iii. Update the list with the merged slice.</li>
+</ul>
+</li>
+<li>b. Double the size for the next iteration.</li>
+</ul>
+</li>
+<li>The fully sorted list <code>L</code> is now ready and returned.</li>
+</ol>
+<p>&nbsp;
+Given the procedure of <code>sort2()</code>, we can now determine its time complexity:</p>
+<ol>
+<li>Insertion Sort on Small Slices:<ul>
+<li>Each small slice of size 32 is sorted in O(32²) time in the worst case, since the worst-case time complexity of insertion sort is O(n²). However, since 32 is a constant, we can ignore constants in big O notation. Therefore, for n elements this gives a complexity of O(n).</li>
+</ul>
+</li>
+<li>Doubling and Merging:<ul>
+<li>The merging process is O(n) for each merge (as seen above). Since the slices being merged keep doubling and at each iteration half as many merges are done as the previous iteration, this process has a logarithmic number of steps (log n) relative to the length of the list. The combined complexity of this process is O(n log n).</li>
+</ul>
+</li>
+</ol>
+<p>Considering both steps, the dominant factor is the merging step, and the overall time complexity of the <code>sort2()</code> algorithm is:</p>
+<ul>
+<li><strong>Best Case</strong>: O(n log n)</li>
+<li><strong>Worst Case</strong>: O(n log n)</li>
+<li><strong>Average Case</strong>: O(n log n)</li>
+</ul>
+<h4 id="Conclusion"><strong>Conclusion</strong><a class="anchor-link" href="#Conclusion">&#182;</a></h4><p><code>sort2()</code>, implementing Timsort, consistently demonstrates a time complexity of O(n log n) in the best, worst, and average cases, thanks to its adaptive and hybrid methodology, making it highly efficient and stable across varied datasets.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="D:-Compare-the-two-algorithms-and-summarise-the-advantages-and-disadvantages-of-using-each-of-the-algorithms.">D: Compare the two algorithms and summarise the advantages and disadvantages of using each of the algorithms.<a class="anchor-link" href="#D:-Compare-the-two-algorithms-and-summarise-the-advantages-and-disadvantages-of-using-each-of-the-algorithms.">&#182;</a></h3><p><strong><code>sort1()</code> - Insertion Sort:</strong></p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li><strong>Simplicity</strong>: Easy to understand and implement.</li>
+<li><strong>In-Place Sorting</strong>: Requires a constant amount of extra memory space, O(1), making it memory efficient.</li>
+<li><strong>Efficient on Small Lists</strong>: Especially optimal for small-sized lists or partially sorted lists due to its linear best-case time complexity.</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li><strong>Scalability</strong>: Inefficient on large lists, with a worse case O(n^2) time complexity, making it less scalable for larger datasets.</li>
+<li><strong>Time Complexity</strong>: Quadratic average time complexity means it is generally outperformed by more advanced algorithms like Merge Sort and Quick Sort on random lists.</li>
+</ul>
+<p><strong><code>sort2()</code> - Timsort:</strong></p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li><strong>Optimal Merging</strong>: Efficiently handles large datasets by merging sorted subarrays, maintaining a time complexity of O(n log n) in all cases.</li>
+<li><strong>Adaptive</strong>: Optimally utilizes Insertion Sort for small subarrays and Merge Sort for merging, balancing efficiency and optimality.</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li><strong>Complexity</strong>: More complex to understand and implement compared to simpler sorting algorithms like Insertion Sort.</li>
+<li><strong>Overhead</strong>: The overhead of advanced mechanisms might make it less optimal for small arrays compared to simpler algorithms.</li>
+</ul>
+<h3 id="Conclusion:"><strong>Conclusion:</strong><a class="anchor-link" href="#Conclusion:">&#182;</a></h3><p><code>sort1()</code> is optimal for smaller or partially sorted datasets due to its simplicity and in-place sorting, while <code>sort2()</code> is more suited for large and diverse datasets, offering optimal time complexity and stability.</p>
 
 </div>
 </div>
